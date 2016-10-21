@@ -1,0 +1,32 @@
+{
+  "name": "ScrumMaster-StandUp",
+  "version": "1.0.0",
+  "author": "Frantisek Ferko",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "root": "/",
+    "src": "src/",
+    "dist": "dist/",
+    "css": "src/design/css/",
+    "app": "src/app/",
+    "design": "src/design/",
+    "vendor": "vendor/",
+    "application": "application/"
+  },
+  "appFiles": {
+    "compressed": "app.min.js",
+    "uncompressed": "app.js",
+    "deps": "deps.min.js"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-connect": "latest"
+  },
+  "dependencies": {
+  },
+  "license": "GFDL-1.3"
+}
