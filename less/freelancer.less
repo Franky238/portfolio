@@ -17,12 +17,15 @@ p.small {
   font-size: 16px;
 }
 
-a,
+a {
+  color: #fff;
+}
+
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: @brand-success;
+  color: @brand-success !important;
   outline: none;
 }
 
@@ -589,7 +592,9 @@ p + .btn {
   transition: all .3s linear;
   max-width: 320px;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     color: @brand-success;
     background-color: #fff;
     transition: all .3s linear;
@@ -600,4 +605,19 @@ p + .btn {
   i.btn-icon {
     margin-right: 10px;
   }
+}
+
+// Tools
+.tools {
+  width: 100%;
+  text-align: center;
+  .tool-icon {
+    display: inline-block;
+  }
+}
+
+.tool-icon > img {
+  max-width: 150px;
+  height: 150px;
+  margin: 15px;
 }

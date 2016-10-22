@@ -64,7 +64,7 @@ $(function() {
     };
 
     var revealBottom = {
-        origin: 'bottom',
+        origin: 'top',
         distance: '80px',
         scale: 1,
         viewFactor: 0.5,
@@ -101,10 +101,10 @@ $(function() {
     //Global classes
     sr.reveal('.reveal-left', revealLeft);
     sr.reveal('.reveal-right', revealRight);
-    sr.reveal('.reveal-bottom', revealBottom);
+    sr.reveal('.reveal-top', revealBottom);
 
     //Special Classes
-    sr.reveal('.reveal-bottom--progress', revealProgress);
+    sr.reveal('.reveal-top--progress', revealProgress);
     sr.reveal('.reveal-right--percentage', revealPercentage);
 
 });
