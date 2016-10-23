@@ -7,7 +7,7 @@
             var companies =  {
                 solar: {
                     title: "Solar Turbines",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et placerat nunc. Duis fermentum tempor ipsum ut lacinia. Quisque volutpat mauris sit amet ante tempus, eget cursus odio viverra. Nullam semper nisl ac rhoncus commodo. Duis eget venenatis dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec maximus sapien quis risus vehicula tincidunt. Phasellus nec consequat nulla, varius ultrices velit.",
+                    description: "My part of work in this company was frontend development on customer application. Frontend is built on Angular.<br/><br/>Headquartered in San Diego, California, USA, Solar Turbines Incorporated, a subsidiary of Caterpillar Inc., is one of the world’s leading manufacturers of industrial gas turbines, with more than 15,000 units and over 2 billion operating hours in over 100 countries.",
                     img: {
                         src: "img/modal/solar.png",
                         alt: "Solar Turbines"
@@ -18,13 +18,13 @@
                     },
                     date: {
                         from: "February 2016",
-                        to: "December 2016"
+                        to: ""
                     },
                     service: "Web development"
                 },
                 ness: {
                     title: "Ness KE s.r.o",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et placerat nunc. Duis fermentum tempor ipsum ut lacinia. Quisque volutpat mauris sit amet ante tempus, eget cursus odio viverra. Nullam semper nisl ac rhoncus commodo. Duis eget venenatis dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec maximus sapien quis risus vehicula tincidunt. Phasellus nec consequat nulla, varius ultrices velit.",
+                    description: "In this company I worked on many interesting projects which helped me improve my knowledge of frontend and backend development. <br /><br />NESS KDC is a development and innovation center products and technologies that provide services to foreign clients in areas such as automotive, transportation, finance, media and marketing, energy and big data.",
                     img: {
                         src: "img/modal/ness.png",
                         alt: "Ness KE s.r.o."
@@ -41,7 +41,7 @@
                 },
                 keyup: {
                     title: "Keyup IT Services, s.r.o.",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et placerat nunc. Duis fermentum tempor ipsum ut lacinia. Quisque volutpat mauris sit amet ante tempus, eget cursus odio viverra. Nullam semper nisl ac rhoncus commodo. Duis eget venenatis dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec maximus sapien quis risus vehicula tincidunt. Phasellus nec consequat nulla, varius ultrices velit.",
+                    description: "Here in this company I started my road to became a web developer. I worked on HTML/CSS responsive templates. <br /><br /> Keyup create websites, portals, web applications, content management systems and also connect them to third party services such as publishing platforms, sharing platforms. The code is always built using modern web technologies so it is perfectly displayed on any device.",
                     img: {
                         src: "img/modal/keyup.png",
                         alt: "Keyup IT Services, s.r.o."
@@ -94,11 +94,11 @@
                                         '</li>' +
                                         '<li>' +
                                             'Date: <strong>' +
-                                            '<a href="!#">' +
+                                            '<span class="success-color">' +
                                                 dataModel.date.from + ((dataModel.date.to.length > 0) ? ' to ' + dataModel.date.to : "") +
-                                            '</a></strong>' +
+                                            '</span></strong>' +
                                         '</li>' +
-                                        '<li>Service: <strong><a href="!#">' + dataModel.service + '</a></strong>' +
+                                        '<li>Service: <strong><span class="success-color">' + dataModel.service + '</span></strong>' +
                                         '</li>' +
                                     '</ul>' +
                                     '<button type="button" class="btn btn-default" data-dismiss="modal">' +

@@ -17,15 +17,12 @@ p.small {
   font-size: 16px;
 }
 
-a {
-  color: #fff;
-}
-
+a,
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: @brand-success !important;
+  color: @brand-success;
   outline: none;
 }
 
@@ -149,12 +146,15 @@ header {
   font-weight: 700;
   a:focus {
     outline: none;
+    color: #fff;
   }
   .navbar-nav {
     letter-spacing: 1px;
     li {
+      a:hover,
       a:focus {
         outline: none;
+        color: @brand-success;
       }
     }
   }
@@ -472,6 +472,10 @@ footer {
 .media-list {
   padding-left: 0;
   list-style: none;
+}
+
+.success-color {
+  color: @brand-success;
 }
 
 //Custom
