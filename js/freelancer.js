@@ -109,4 +109,9 @@ $(function() {
 
 });
 
+$(function () {
+    $('#curriculum-click').on('click', function () {
+        gaClick();
+    });
+});
 

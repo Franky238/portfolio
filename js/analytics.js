@@ -9,7 +9,3 @@ ga('send', 'pageview');
 function gaClick() {
     return ga('send', 'event', 'Curriculum', 'show', 'Curriculum show');
 }
-
-$('#curriculum-click').on('click', function () {
-    gaClick();
-});
