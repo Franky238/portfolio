@@ -113,5 +113,9 @@ $(function () {
     $('#curriculum-click').on('click', function () {
         gaClick();
     });
+
+    // YEAR
+    var today = new Date();
+    $("#year").text(today.getFullYear());
 });
 
