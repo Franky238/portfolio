@@ -5,6 +5,23 @@
         getOptions: function (companyName) {
 
             var companies =  {
+                wirecard: {
+                    title: "Wirecard",
+                    description: "In this company I worked on applications for Wirecard customers. Frontend is built on Angular 4 with TypeScript.<br/><br/>Wirecard is a software and IT specialist for outsourcing and white label solutions for payment processing and issuing products. As a software and IT specialist, Wirecard is also constantly expanding its portfolio with innovative payment technologies.",
+                    img: {
+                        src: "img/modal/wirecard.png",
+                        alt: "Wirecard"
+                    },
+                    client: {
+                        name: "Wirecard",
+                        homepage: "http://www.wirecard.com"
+                    },
+                    date: {
+                        from: "May 2017",
+                        to: ""
+                    },
+                    service: "Web development"
+                },
                 solar: {
                     title: "Solar Turbines",
                     description: "My part of work in this company was frontend development on customer application. Frontend is built on Angular.<br/><br/>Headquartered in San Diego, California, USA, Solar Turbines Incorporated, a subsidiary of Caterpillar Inc., is one of the world’s leading manufacturers of industrial gas turbines, with more than 15,000 units and over 2 billion operating hours in over 100 countries.",
@@ -18,7 +35,7 @@
                     },
                     date: {
                         from: "February 2016",
-                        to: ""
+                        to: "April 2017"
                     },
                     service: "Web development"
                 },
