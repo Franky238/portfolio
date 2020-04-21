@@ -1,5 +1,5 @@
 {
-  "name": "ScrumMaster-StandUp",
+  "name": "portfolio",
   "version": "1.0.0",
   "author": "Frantisek Ferko",
   "description": "",
@@ -26,7 +26,6 @@
     "gulp": "latest",
     "gulp-connect": "latest"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "license": "GFDL-1.3"
 }
