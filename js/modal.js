@@ -18,7 +18,7 @@
                     },
                     date: {
                         from: "May 2017",
-                        to: ""
+                        to: "May 2019"
                     },
                     service: "Web development"
                 },
