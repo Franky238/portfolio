@@ -1,12 +1,12 @@
 var SkillsModel = {
     getSkill: function (skill) {
         var skills = {
-            html: '90%',
-            css: '85%',
-            js: '84%',
+            html: '96%',
+            css: '91%',
+            js: '93%',
             php: '73%',
-            typescript: '79%',
-            sql: '67%',
+            typescript: '92%',
+            sql: '70%',
             python: '38%'
         };
 

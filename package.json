@@ -20,7 +20,7 @@
     "deps": "deps.min.js"
   },
   "scripts": {
-    "start": "gulp"
+    "start": "gulp server"
   },
   "devDependencies": {
     "gulp": "latest",

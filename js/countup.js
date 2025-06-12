@@ -5,30 +5,30 @@
 
  */
 
-// target = id of html element or var of previously selected html element where counting occurs
+// target = id of an HTML element or const of a previously selected HTML element where counting occurs
 // startVal = the value you want to begin at
 // endVal = the value you want to arrive at
 // decimals = number of decimal places, default 0
 // duration = duration of animation in seconds, default 2
 // options = optional object of options (see below)
 
-var CountUp = function(target, startVal, endVal, decimals, duration, options) {
+const CountUp = function(target, startVal, endVal, decimals, duration, options) {
 
     // make sure requestAnimationFrame and cancelAnimationFrame are defined
     // polyfill for browsers without native support
     // by Opera engineer Erik Möller
-    var lastTime = 0;
-    var vendors = ['webkit', 'moz', 'ms', 'o'];
-    for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+    let lastTime = 0;
+    const vendors = ['webkit', 'moz', 'ms', 'o'];
+    for(let x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
         window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
         window.cancelAnimationFrame =
             window[vendors[x]+'CancelAnimationFrame'] || window[vendors[x]+'CancelRequestAnimationFrame'];
     }
     if (!window.requestAnimationFrame) {
         window.requestAnimationFrame = function(callback, element) {
-            var currTime = new Date().getTime();
-            var timeToCall = Math.max(0, 16 - (currTime - lastTime));
-            var id = window.setTimeout(function() { callback(currTime + timeToCall); },
+            const currTime = new Date().getTime();
+            const timeToCall = Math.max(0, 16 - (currTime - lastTime));
+            const id = window.setTimeout(function() { callback(currTime + timeToCall); },
                 timeToCall);
             lastTime = currTime + timeToCall;
             return id;
@@ -40,7 +40,7 @@ var CountUp = function(target, startVal, endVal, decimals, duration, options) {
         };
     }
 
-    var self = this;
+    const self = this;
 
     // default options
     self.options = {
@@ -52,7 +52,7 @@ var CountUp = function(target, startVal, endVal, decimals, duration, options) {
         formattingFn: null // optional custom formatting function, default is self.formatNumber below
     };
     // extend default options with passed options object
-    for (var key in options) {
+    for (const key in options) {
         if (options.hasOwnProperty(key)) {
             self.options[key] = options[key];
         }
@@ -97,7 +97,7 @@ var CountUp = function(target, startVal, endVal, decimals, duration, options) {
 
     // Print value to target
     self.printValue = function(value) {
-        var result = self.formattingFn(value);
+        const result = self.formattingFn(value);
 
         if (self.d.tagName === 'INPUT') {
             this.d.value = result;
@@ -115,7 +115,7 @@ var CountUp = function(target, startVal, endVal, decimals, duration, options) {
         if (!self.startTime) { self.startTime = timestamp; }
 
         self.timestamp = timestamp;
-        var progress = timestamp - self.startTime;
+        const progress = timestamp - self.startTime;
         self.remaining = self.duration - progress;
 
         // to ease or not to ease

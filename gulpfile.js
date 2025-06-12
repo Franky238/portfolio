@@ -1,15 +1,10 @@
 var gulp = require('gulp');
 var conn = require('gulp-connect');
 
-gulp.task('server', function () {
+function server() {
     conn.server({
         port: 9000
     });
-});
+}
 
-
-/**************************************************
- *      TASKS OF TASKS
- **************************************************/
-
-gulp.task('default', ['server']);
+exports.server = server;
